@@ -1,0 +1,44 @@
+while True:
+  num1 = input("Digite o primeiro número: ")
+  operacao = input("Digite a operação: ")
+  num2 = input("Digite o segundo número: ")
+
+  
+
+  resultado = None
+  bateriamax =  10
+
+
+  if num1 == "carregar":
+    bateria = bateriamax
+
+
+
+  
+
+  elif operacao == "+":
+      resultado = float(num1) + float(num2)
+
+  elif operacao == "-":
+      resultado = float(num1) - float(num2)
+
+  elif operacao == "*":
+      resultado = float(num1) * float(num2)
+
+  elif operacao == "/":
+      resultado = float(num1) / float(num2)
+  
+  
+
+  else:
+      print("Operação não existente!")
+
+
+
+  if resultado:
+    print("Resultado: {0}".format(resultado), "bateria:", bateriamax-1)
+    
+  
+    break
+
+
